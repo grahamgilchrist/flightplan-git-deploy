@@ -23,11 +23,11 @@ var addToPlan = function (plan) {
   var webRoot = plan.runtime.options.webRoot;
 
   plan.remote('gitDeploy', function(remote) {
-    remoteGitDeploy(remote, webRoot);
+    gitPull(remote, webRoot);
   });
 };
 
 module.exports = {
   addToPlan: addToPlan,
-  remoteGitDeploy: remoteGitDeploy
+  gitPull: gitPull
 };

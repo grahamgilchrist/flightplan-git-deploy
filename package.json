@@ -1,0 +1,18 @@
+{
+  "name": "flightplan-git-deploy",
+  "description": "Provides flightplan task for git deploys",
+  "version": "1.0.0",
+  "author": "Graham Gilchrist <git@grahamgilchrist.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/grahamgilchrist/flightplan-git-deploy"
+  },
+  "bugs": {
+    "url": "git://github.com/grahamgilchrist/flightplan-git-deploy/issues"
+  },
+  "license": "MIT",
+  "main": "git-deploy.js",
+  "dependencies": {
+    "flightplan": "0.6.2"
+  }
+}

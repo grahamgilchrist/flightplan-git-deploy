@@ -35,7 +35,7 @@ plan.target('production', serverConfig, {
 });
 
 plan.local('customTask', function(local) {
-  // some code here
+  // some optional initial local tasks here
 });
 
 plan.remote('customTask', function(remote) {

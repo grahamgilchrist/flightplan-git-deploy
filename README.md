@@ -2,7 +2,9 @@
 Provides a [flightplan](https://github.com/pstadler/flightplan) task for git deploys
 
 ## Usage
-* Add a `webRoot` property to your target options. Thsi shoudl be the path on the remote server where you want to execute a `git pull`.
+* Add a `webRoot` property to your target options. 
+* This should be the path on the remote server where you want to execute a `git pull`.
+* e.g. `/var/www/project-root`
 
 There are two methods of using this module:
 

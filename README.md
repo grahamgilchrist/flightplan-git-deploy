@@ -1,5 +1,5 @@
 # flightplan-git-deploy
-Provides a [flightplan](https://github.com/pstadler/flightplan) task for git deploys
+NodeJS/npm module which provides a [flightplan](https://github.com/pstadler/flightplan) task for git deploys
 
 ## Usage
 * Add a `webRoot` property to your target options. 

@@ -19,10 +19,9 @@ var gitPull = function (remote, webRoot) {
   @param plan.runtime.options.webRoot {String} Remote path to run git pull
 */
 var addToPlan = function (plan) {
-  // Plan to git deploy via ssh remote
-  var webRoot = plan.runtime.options.webRoot;
-
+  // Task to git deploy via ssh remote
   plan.remote('gitDeploy', function(remote) {
+    var webRoot = plan.runtime.options.webRoot;
     gitPull(remote, webRoot);
   });
 };

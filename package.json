@@ -13,6 +13,5 @@
   "license": "MIT",
   "main": "git-deploy.js",
   "dependencies": {
-    "flightplan": "0.6.2"
   }
 }

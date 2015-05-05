@@ -1,13 +1,13 @@
 module.exports = function () {
 
   /*
-    @method remotGitDeploy
+    @method gitPull
     Takes a flightplan instance and transport
     @param remote {Object} Flightplan transport instance
     @param webRoot {string} path to run git pull on the remote server
      e.g. /var/www/project
   */
-  var remotGitDeploy = function (remote, webRoot) {
+  var gitPull = function (remote, webRoot) {
     // git pull
     remote.with('cd ' + webRoot, function() {
       remote.exec('git pull');

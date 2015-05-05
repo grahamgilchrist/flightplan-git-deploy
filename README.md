@@ -1,9 +1,6 @@
 # flightplan-git-deploy
 Provides a [flightplan](https://github.com/pstadler/flightplan) task for git deploys
 
-## Requirements
-* a flightplan compatible `flightplan.js`
-
 ## Usage
 * Add a `webRoot` property to your target options. Thsi shoudl be the path on the remote server where you want to execute a `git pull`.
 

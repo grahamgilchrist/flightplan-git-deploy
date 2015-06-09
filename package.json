@@ -1,7 +1,7 @@
 {
   "name": "flightplan-git-deploy",
   "description": "Provides flightplan task for git deploys",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Graham Gilchrist <git@grahamgilchrist.com>",
   "repository": {
     "type": "git",

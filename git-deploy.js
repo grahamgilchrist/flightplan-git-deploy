@@ -3,12 +3,15 @@
   Takes a flightplan instance and transport
   @param remote {Object} Flightplan transport instance
   @param webRoot {string} path to run git pull on the remote server
+  @param [gitIdentifier=master] {string} branch/tag/commit identifier
    e.g. /var/www/project
 */
-var gitPull = function (remote, webRoot) {
+var gitPull = function (remote, webRoot, gitIdentifier) {
   // git pull
+  var gitIdentifier = gitIdentifier || 'master';
   remote.with('cd ' + webRoot, function() {
     remote.exec('git pull');
+    remote.exec('git checkout ' + gitIdentifier);
   });
 };
 
